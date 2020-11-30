@@ -1,0 +1,21 @@
+GET http://localhost:9200/_cluster/health
+
+###
+
+GET http://localhost:9200/blog/
+
+###
+
+GET http://localhost:9200/blog/posts/_search
+
+###
+
+POST http://localhost:9200/blog/posts/_search
+Content-Type: application/json
+{
+  "query": {
+    "match": {
+      "Title": "Elasticsearch"
+    }
+  }
+}

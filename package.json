@@ -1,0 +1,23 @@
+{
+  "name": "codingdojo-elk",
+  "version": "1.0.0",
+  "description": "Coding Dojo",
+  "author": "Kevin Py",
+  "license": "MIT",
+  "scripts": {
+    "info": "node scripts/info.js",
+    "ping": "node scripts/ping.js",
+    "create": "node scripts/index.js create",
+    "add:first": "node scripts/index.js addFirst",
+    "add:second": "node scripts/index.js addSecond",
+    "delete": "node scripts/index.js delete",
+    "count": "node scripts/index.js count",
+    "search:params": "node scripts/index.js searchParams",
+    "search:query": "node scripts/index.js searchQuery",
+    "search:wildcard": "node scripts/index.js wildcard",
+    "search:regexp": "node scripts/index.js regexp"
+  },
+  "dependencies": {
+    "elasticsearch": "^15.2.0"
+  }
+}
